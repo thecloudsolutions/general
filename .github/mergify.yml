@@ -154,7 +154,7 @@ pull_request_rules:
       - and: *is_open
     actions:
       label:
-        add:
+        toggle:
           - "auto-update"
 
   - name: "Add triage label to new PRs"
@@ -164,7 +164,7 @@ pull_request_rules:
       - and: *is_new_pr
     actions:
       label:
-        add:
+        toggle:
           - triage
 
   - name: "Add readme label to PRs"
@@ -343,7 +343,7 @@ pull_request_rules:
       - and: *no_changes
     actions:
       label:
-        add:
+        toggle:
           - "no-changes"
       close:
         message: |
@@ -367,7 +367,7 @@ pull_request_rules:
       - and: *not_pending
     actions:
       label:
-        add:
+        toggle:
           - "no-release"
       merge:
         method: "squash"
