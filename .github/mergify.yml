@@ -124,9 +124,6 @@ shared:
     - and:
         - and: *not_approved
         - "#label=0"
-        - or:
-            - "created-at > 5 minutes ago"
-            - "commits[*].date_committer > 5 minutes ago"
 
 # Pull Request Rules
 pull_request_rules:
