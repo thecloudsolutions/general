@@ -28,7 +28,7 @@ shared:
         - "-author=@engineering"
         - "-author=@approvers"
         - "-author=@admins"
-        - "-author=@aws-devops"
+        - "-author=@thecloudsolutions/aws-devops"
 
   is_wip_title: &is_wip_title
     - and:
